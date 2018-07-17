@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+
+
+
+<head>
+
+<title> poop </title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="jsfileforShit.js"></script>
+<link rel="stylesheet" href="cssfileforShit.css">
+</head>
+<body>
+
+
+
+<center><h1>Zion Phillpotts</h1></center>
+
+<div class="tab">
+  <center><button class="tablinks" onclick="openCity(event, 'School')">School</button></center>
+  <center><button class="tablinks" onclick="openCity(event, 'Teams')">Teams</button></center>
+  <center><button class="tablinks" onclick="openCity(event, 'Jobs')">Jobs</button></center>
+  <center><button class="tablinks" onclick="openCity(event, 'Summers')">Summers</button></center>
+  <center><button class="tablinks" onclick="openCity(event, 'Trips')">Trips</button></center>
+  <center><button class="tablinks" onclick="openCity(event, 'Music')">Music</button></center>
+  <center><button class="tablinks" onclick="openCity(event, 'TV/Movies')">TV/Movies</button></center>
+  <center><button class="tablinks" onclick="openCity(event, 'YouTube')">YouTube</button></center>
+  <center><button class="tablinks" onclick="openCity(event, 'Locations')">Locations</button></center>
+</div>
+
+<div id="home" class="home">
+<center><img src="picwithsam.jpg" onmouseover="height=1334; width=750" onmouseout="height=50; width=50"/></center>
+<center><img src="picwithphoebe.jpg" onmouseover="height=1334; width=750" onmouseout="height=50; width=50"/></center>
+</div>
+<div id="School" class="tabcontent">
+  <h3> My School </h3>
+  <p> Oak Park and River Forest High School </p>
+  <ul>
+    <li> Classes </li>
+    <li> Leadership</li>
+    <li> Biology</li>
+    <li> SILC</li>
+    <li> Clubs</li>
+  </ul>
+  <center><img onmouseover="height=400; width=400" onmouseout="height=100; width=100" src="Huskies.jpg" class="pictures"/></center>
+</div>
+
+<div id="Teams" class="tabcontent">
+  <h3> My Teams </h3>
+  <ul>
+    <li> Gymnastics </li>
+    <ul>
+      <li> Oak Park Gymnastics </li>
+      <li> OPRFHS Gymnastics </li>
+      <li> Tri Star Gymnastics </li>
+    </ul>
+    <li> Cheer </li>
+    <ul>
+      <li> Doing the fall term of 2018</li>
+    </ul>
+    <li> Soccer </li>
+    <ul>
+      <li> Only did my freshman spring term of 2016 </li>
+    </ul>
+    <li> Track </li>
+    <ul>
+      <li> Did my spring junior year term of 2018 </li>
+    </ul>
+  </ul>
+</div>
+
+<div id="Jobs" class="tabcontent">
+  <h3> My Jobs </h3>
+  <ul>
+    <li> MyGym Children Fitness Center </li>
+    <li> Allstate Insurance </li>
+  </ul>
+</div>
+
+<div id="Summers" class="tabcontent">
+  <h3> My Summer Experiences </h3>
+  <ul>
+    <li> Girls Who Code </li>
+    <li> Howard University Summer Actuarial Program </li>
+    <li> Nannying </li>
+    <li> Gymnastics (done my whole life) </li>
+    <li> Trip with Talia </li>
+  </ul>
+</div>
+
+<div id="Trips" class="tabcontent">
+  <h3> My Winter/All Trips </h3>
+  <ul>
+    <li> Spain </li>
+    <li> East Coast </li>
+    <ul>
+      <li> New York  </li>
+      <li> Boston </li>
+      <li> Cainbridge </li>
+      <li> Hanover </li>
+      <li> Princeton </li>
+    </ul>
+    <li> Cancun, Mexico </li>
+
+  </ul>
+</div>
+
+<div id="Music" class="tabcontent">
+  <h3> Artists I Like </h3>
+  <ul>
+    <li> Amine </li>
+    <li> KYLE </li>
+    <li> Khalid </li>
+    <li> Noah Cyrus </li>
+  </ul>
+</div>
+
+<div id="TV/Movies" class="tabcontent">
+  <h3> TV and Movies </h3>
+  <ul>
+    <li> Friends </li>
+    <li> Gilmore Girls </li>
+  </ul>
+</div>
+
+<div id="YouTube" class="tabcontent">
+  <h3> My YouTube </h3>
+  <ul>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/N5bzR9OPCX0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/uu1N52YbEyU" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+  </ul>
+</div>
+
+<div id="Locations" class="tabcontent">
+  <h3>Tokyo</h3>
+  <p>Tokyo is the capital of Japan.</p>
+</div>
+
+<script>
+function openCity(evt, cityName) {
+    //Alex Added This
+    document.getElementById("home").style.display = "none";
+    //--------------
+    var i, tabcontent, tablinks;
+    tabcontent = document.getElementsByClassName("tabcontent");
+    for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+    }
+    tablinks = document.getElementsByClassName("tablinks");
+    for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
+    }
+    document.getElementById(cityName).style.display = "block";
+    evt.currentTarget.className += " active";
+}
+</script>
+
+</body>
+</html>
